@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<title>Life Maker Hub — 10 Apps · Shop · Profit</title>
+<meta name="description" content="Life Maker: 10 passive-income apps, live shop, daily engine, profit ledger. PayID ready."/>
+<meta name="theme-color" content="#0a0a0b"/>
+<style>
+:root{--bg:#0a0a0b;--s:#121214;--e:#1a1a1e;--fg:#f4f4f5;--m:#a1a1aa;--b:#27272a;--a:#7dd3c0;--af:#042f2e;--ok:#4ade80;--warn:#fbbf24}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--fg);line-height:1.45}
+a{color:var(--a);text-decoration:none}.w{width:min(1100px,100% - 1.2rem);margin:0 auto}
+header{position:sticky;top:0;z-index:30;background:rgba(10,10,11,.95);border-bottom:1px solid var(--b);backdrop-filter:blur(12px)}
+.nav{display:flex;gap:.4rem;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:.7rem 0}
+.brand{font-weight:750;display:flex;gap:.5rem;align-items:center}
+.mark{width:30px;height:30px;border-radius:8px;background:var(--e);border:1px solid var(--b);display:grid;place-items:center;color:var(--a);font-size:.72rem;font-weight:800}
+.tabs{display:flex;gap:.3rem;flex-wrap:wrap}
+.tab{border:1px solid var(--b);background:var(--e);color:var(--m);border-radius:999px;padding:.35rem .7rem;font-size:.78rem;font-weight:650;cursor:pointer}
+.tab.on{background:var(--a);color:var(--af);border-color:transparent}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.35rem;min-height:42px;padding:.55rem .9rem;border-radius:10px;border:0;font-weight:650;cursor:pointer;background:var(--e);color:var(--fg);font-size:.88rem}
+.ba{background:var(--a);color:var(--af)}.bp{background:var(--fg);color:var(--bg)}.bg{background:transparent;border:1px solid var(--b);color:var(--m)}
+h1{font-size:clamp(1.4rem,3.5vw,2rem);letter-spacing:-.03em;margin:.2rem 0}
+.m{color:var(--m)}.s{color:#71717a;font-size:.82rem}
+.grid{display:grid;gap:.75rem}.g2{grid-template-columns:1fr}@media(min-width:760px){.g2{grid-template-columns:1fr 1fr}.g4{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--s);border:1px solid var(--b);border-radius:14px;padding:.95rem}
+.price{font-family:ui-monospace,Menlo,monospace;color:var(--a);font-weight:750}
+.badge{display:inline-flex;border-radius:999px;padding:.12rem .55rem;font-size:.7rem;font-weight:650;border:1px solid var(--b);background:var(--e);color:var(--m)}
+.ok{border-color:rgba(74,222,128,.35);background:rgba(74,222,128,.12);color:var(--ok)}
+.hot{border-color:rgba(125,211,192,.4);background:rgba(125,211,192,.12);color:var(--a)}
+input{width:100%;background:var(--e);border:1px solid var(--b);border-radius:10px;color:var(--fg);padding:.6rem .75rem;font:inherit;margin:.25rem 0 .5rem}
+label{font-size:.72rem;color:var(--m);font-weight:600}
+.row{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
+.stack{display:flex;flex-direction:column;gap:.5rem}
+.bar{height:8px;background:var(--e);border-radius:999px;overflow:hidden}.bar>i{display:block;height:100%;background:var(--a)}
+.dot{width:8px;height:8px;border-radius:99px;display:inline-block}
+main{padding:1rem 0 5rem}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;padding:.55rem .7rem calc(.55rem + env(safe-area-inset-bottom));background:rgba(10,10,11,.97);border-top:1px solid var(--b)}
+.mono{font-family:ui-monospace,Menlo,monospace}
+</style>
+</head>
+<body>
+<header><div class="w nav">
+  <div class="brand"><span class="mark">LM</span><span>Life Maker Hub</span></div>
+  <div class="tabs" id="tabs"></div>
+</div></header>
+<main class="w" id="app"></main>
+<div class="sticky"><div class="w row">
+  <button class="btn ba" style="flex:1" id="goShop">Sell</button>
+  <button class="btn" style="flex:1" id="goDaily">Daily</button>
+  <button class="btn" style="flex:1" id="goProfit">Profit</button>
+</div></div>
+<script src="./hub.js"></script>
+</body></html>
